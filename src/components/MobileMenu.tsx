@@ -1,5 +1,3 @@
-/* eslint-disable no-unused-vars */
-
 interface MobileMenuProps {
   isOpen: boolean;
   onDismiss: () => void;

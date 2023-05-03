@@ -1,12 +1,11 @@
 import styled from "styled-components/macro";
 
-import { useState } from "react";
 import { COLORS, WEIGHTS } from "../constants";
 import Logo from "./Logo";
 import SuperHeader from "./SuperHeader";
 
 const Header = () => {
-  const [showMobileMenu, setShowMobileMenu] = useState(false);
+  // const [showMobileMenu, setShowMobileMenu] = useState(false);
   // Our site features two visual headers, but they should be
   // grouped semantically as a single header.
   return (
