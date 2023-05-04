@@ -6,6 +6,21 @@ import Icon from "./Icon";
 import SearchInput from "./SearchInput";
 import UnstyledButton from "./UnstyledButton";
 
+const MarketingMessage = styled.span`
+  color: ${COLORS.white};
+  margin-right: auto;
+`;
+
+const HelpLink = styled.a`
+  color: inherit;
+  text-decoration: none;
+  outline-offset: 2px;
+
+  &:not(:focus-visible) {
+    outline: none;
+  }
+`;
+
 const SuperHeader = () => {
   return (
     <Wrapper>
@@ -31,20 +46,9 @@ const Wrapper = styled.div`
   height: 40px;
   padding-left: 32px;
   padding-right: 32px;
-`;
 
-const MarketingMessage = styled.span`
-  color: ${COLORS.white};
-  margin-right: auto;
-`;
-
-const HelpLink = styled.a`
-  color: inherit;
-  text-decoration: none;
-  outline-offset: 2px;
-
-  &:not(:focus-visible) {
-    outline: none;
+  ${(p) => p.theme.queries.tabletAndDown} {
+    display: none;
   }
 `;
 

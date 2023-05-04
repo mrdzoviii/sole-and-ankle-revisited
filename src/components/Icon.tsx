@@ -1,4 +1,4 @@
-import { ChevronDown, Menu, Search, ShoppingBag } from "react-feather";
+import { ChevronDown, Menu, Search, ShoppingBag, X } from "react-feather";
 import styled from "styled-components/macro";
 
 const icons = {
@@ -6,6 +6,7 @@ const icons = {
   menu: Menu,
   "shopping-bag": ShoppingBag,
   "chevron-down": ChevronDown,
+  close: X,
 };
 
 interface IconProps {
@@ -13,6 +14,7 @@ interface IconProps {
   color?: string;
   size?: number;
   strokeWidth?: number;
+  onClick?: () => void;
 }
 
 const Icon = ({ id, color, size, strokeWidth, ...delegated }: IconProps) => {
