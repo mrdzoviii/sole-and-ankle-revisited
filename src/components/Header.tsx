@@ -24,7 +24,9 @@ const Header = () => {
           <NavLink href="/sale">Sale</NavLink>
           <NavLink href="/new">New&nbsp;Releases</NavLink>
           <NavLink href="/men">Men</NavLink>
-          <NavLink href="/women">Women fsdfddssdfsd</NavLink>
+          <NavLink href="/women">
+            Women&nbsp;fsdfddssdfsd&nbsp;dfkdgfkgfdfglfdglk
+          </NavLink>
           <NavLink href="/kids">Kidssdklsdfkfslsl</NavLink>
           <NavLink href="/collections">Collections</NavLink>
         </DesktopNav>
@@ -140,7 +142,6 @@ const NavLink = styled.a`
   text-decoration: none;
   color: var(--color-gray-900);
   font-weight: var(--font-weight-medium);
-  white-space: nowrap;
 
   &:first-of-type {
     color: var(--color-secondary);
