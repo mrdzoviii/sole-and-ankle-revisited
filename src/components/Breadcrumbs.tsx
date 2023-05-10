@@ -1,7 +1,5 @@
 import styled from "styled-components/macro";
 
-import { COLORS } from "../constants";
-
 interface BreadcrumbsProps {
   children: React.ReactNode;
 }
@@ -32,17 +30,17 @@ const CrumbWrapper = styled.div`
     &::before {
       content: "/";
       margin-right: 8px;
-      color: ${COLORS.gray[300]};
+      color: var(--color-gray-300);
     }
   }
 `;
 
 const CrumbLink = styled.a`
-  color: ${COLORS.gray[700]};
+  color: var(--color-gray-700);
   text-decoration: none;
 
   &:hover {
-    color: ${COLORS.gray[900]};
+    color: var(--color-gray-900);
   }
 `;
 

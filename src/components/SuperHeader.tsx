@@ -1,13 +1,11 @@
 import styled from "styled-components";
 
-import { COLORS } from "../constants";
-
 import Icon from "./Icon";
 import SearchInput from "./SearchInput";
 import UnstyledButton from "./UnstyledButton";
 
 const MarketingMessage = styled.span`
-  color: ${COLORS.white};
+  color: var(--color-white);
   margin-right: auto;
 `;
 
@@ -38,8 +36,8 @@ const SuperHeader = () => {
 
 const Wrapper = styled.div`
   font-size: 0.875rem;
-  color: ${COLORS.gray[300]};
-  background-color: ${COLORS.gray[900]};
+  color: var(--color-gray-300);
+  background-color: var(--color-gray-900);
   display: flex;
   align-items: center;
   gap: 24px;

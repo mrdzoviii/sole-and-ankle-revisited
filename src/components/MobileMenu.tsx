@@ -1,6 +1,5 @@
 import { Dialog } from "@headlessui/react";
 import styled from "styled-components/macro";
-import { COLORS } from "../constants";
 import Icon from "./Icon";
 import UnstyledButton from "./UnstyledButton";
 import VisuallyHidden from "./VisuallyHidden";
@@ -56,7 +55,7 @@ const Navigation = styled.nav`
 `;
 
 const NavLink = styled.a`
-  color: ${COLORS.gray[900]};
+  color: var(--color-gray-900)
   font-size: 1.125rem;
   text-decoration: none;
   font-weight: 600;
@@ -64,12 +63,12 @@ const NavLink = styled.a`
 
   &:focus,
   &:hover {
-    color: ${COLORS.secondary};
+    color: var(--color-secondary);
   }
 `;
 
 const FooterLink = styled.a`
-  color: ${COLORS.gray[700]};
+  color: var(--color-gray-700);
   font-size: 0.875rem;
   text-decoration: none;
   font-weight: 500;
@@ -92,7 +91,7 @@ const Footer = styled.footer`
 `;
 
 const Backdrop = styled.div`
-  background-color: hsla(220, 5%, 40%, 0.8);
+  background-color: var(--color-backdrop);
   position: fixed;
   top: 0;
   bottom: 0;
@@ -106,7 +105,7 @@ const Content = styled.div`
   bottom: 0;
   right: 0;
   width: 300px;
-  background-color: ${COLORS.white};
+  background-color: var(--color-white);
   display: flex;
   flex-direction: column;
   justify-content: space-between;

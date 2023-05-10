@@ -1,6 +1,5 @@
 import styled, { CSSProperties } from "styled-components/macro";
 
-import { COLORS, WEIGHTS } from "../constants";
 import { formatPrice, isNewShoe, pluralize } from "../utils";
 import Spacer from "./Spacer";
 
@@ -54,7 +53,8 @@ const ShoeCard = ({
           <Price
             style={
               {
-                "--color": variant === "on-sale" ? COLORS.gray[700] : "inherit",
+                "--color":
+                  variant === "on-sale" ? "var(--color-gray-700)" : "inherit",
                 "--text-decoration":
                   variant === "on-sale" ? "line-through" : "none",
               } as CSSProperties
@@ -83,21 +83,21 @@ const Tag = styled.div`
   position: absolute;
   top: 12px;
   right: -4px;
-  color: ${COLORS.white};
+  color: var(--color-white);
   padding: 0 10px;
   line-height: 32px;
   height: 32px;
   border-radius: 2px;
   font-size: ${14 / 16}rem;
-  font-weight: ${WEIGHTS.bold};
+  font-weight: var(--font-weight-bold);
 `;
 
 const SaleTag = styled(Tag)`
-  background-color: ${COLORS.primary};
+  background-color: var(--color-primary);
 `;
 
 const NewTag = styled(Tag)`
-  background-color: ${COLORS.secondary};
+  background-color: var(--color-secondary);
 `;
 
 const Wrapper = styled.article``;
@@ -118,8 +118,8 @@ const Row = styled.div`
 `;
 
 const Name = styled.h3`
-  font-weight: ${WEIGHTS.medium};
-  color: ${COLORS.gray[900]};
+  font-weight: var(--font-weight-medium);
+  color: var(--color-gray-900);
 `;
 
 const Price = styled.span`
@@ -128,12 +128,12 @@ const Price = styled.span`
 `;
 
 const ColorInfo = styled.p`
-  color: ${COLORS.gray[700]};
+  color: var(--color-gray-700);
 `;
 
 const SalePrice = styled.span`
-  font-weight: ${WEIGHTS.medium};
-  color: ${COLORS.primary};
+  font-weight: var(--font-weight-medium);
+  color: var(--color-primary);
 `;
 
 export default ShoeCard;
